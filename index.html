@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="trip.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#add-trip">Add Trip</a></li>
+                <li><a href="#itinerary">My Itineraries</a></li>
+                <li><a href="#contect">Contect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="add-trip">
+            <h2>Add a New Trip</h2>
+            <form id="trip-form">
+                <input type="text" id="destination" placeholder="Destination" required>
+                <input type="date" id="start-date" required>
+                <input type="date" id="end-date" required>
+                <button type="submit">Add Trip</button>
+            </form>
+        </section>
+
+        <section id="itinerary">
+            <h2>My Itineraries</h2>
+            <ul id="trip-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
